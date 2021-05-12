@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("raleway-Regular.ttf") format("truetype");
+}
+
+main {
+    padding-top: 2em;
+}
+
+.background {
+    background: url("../img/plans-background.jpg");
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    filter: blur(3px) grayscale(30%);
+}
+
+.package a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 2rem;
+}
+
+.package {
+    position: relative;
+    width: 80%;
+    margin: 1rem 0;
+    border: 3px solid rgb(93, 186, 248);
+    border-left: none;
+    opacity: 0.9;
+}
+
+.package__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.2rem;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(153, 153, 153);
+    font-size: 0.8rem;
+    background: #ff5454;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.package:hover,
+.package:active {
+    border-color: black;
+    box-shadow: 2px 2px 2px #999;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+#plus {
+    background: rgb(213, 234, 253);
+}
+
+#free {
+    background: rgb(178, 216, 252);
+    float: right;
+    border-right: none;
+    border-left: 3px solid rgb(93, 186, 248);
+    text-align: right;
+}
+
+#free:hover,
+#free:active {
+    border: 3px solid black;
+    border-right: none;
+}
+
+#premium {
+    background: rgb(116, 187, 253);
+}
+
+.offer {
+    color: black;
+}
+
+.offer-plan {
+    color: #666;
+}
+
+#premium .offer {
+    color: white;
+}
+
+.offer-description {
+    padding: 1.1rem;
+    background: #fff;
+    border: 2px solid rgb(93, 186, 248);
+    color: black;
+    font-size: 1.2rem;
+    /* font-style font-variant font-weight font-size/line-height font-family */
+}
+
+@media (min-width: 40rem) {
+    main {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .package {
+        border-left: 3px solid rgb(93, 186, 248);
+    }
+    #free {
+        border-right: 3px solid rgb(93, 186, 248);
+    }
+    #free:hover,
+    #free:active {
+        border: 3px solid black;
+    }
+}

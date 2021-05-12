@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+#product-overview {
+    background: linear-gradient(to top, rgba(88, 68, 18, 0.6)10%, transparent), url("img/freedom.jpg") left 10% bottom 70%/cover no-repeat border-box, #ff1b68;
+    /* background-image: url("freedom.jpg");
+    background-size: cover;
+    background-position: left 10% bottom 20%;
+    background-repeat: no-repeat; */
+    /* background-origin: border-box;
+    background-clip: border-box; */
+    /* background-image: radial-gradient(ellipse farthest-corner at 200px 250px, red %, blue 70%, orange); */
+    width: 100vw;
+    height: 33vh;
+    position: relative;
+}
+
+#product-overview h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 40rem) and (min-height: 40rem) {
+    #product-overview {
+        height: 40vh;
+        background-position: 50% 25%;
+    }
+    #product-overview h1 {
+        font-size: 3rem;
+    }
+}
+
+.section-title {
+    color: rgb(120, 158, 158);
+    text-align: center;
+}
+
+.plan {
+    background: rgb(170, 226, 226);
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+.plan .plan__features {
+    list-style: none;
+    padding: 0;
+}
+
+.plan__feature {
+    margin: 0.5rem 0;
+}
+
+@media (min-width: 40rem) {
+    .plan__list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .plan {
+        width: 30%;
+        min-width: 13rem;
+        max-width: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 28rem;
+    }
+    .plan--highlighted {
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+        height: 30rem;
+        z-index: 50;
+    }
+}
+
+.plan--highlighted {
+    background: #ff1b68;
+    color: white;
+    /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); */
+}
+
+.plan__annotation {
+    background: white;
+    color: #ff1b68;
+    border-radius: 5px;
+    padding: 0.5rem 0;
+    box-shadow: 2px 2px 3px #666;
+}
+
+.plan__title {
+    color: #444;
+}
+
+.plan__price {
+    color: rgb(126, 123, 123);
+}
+
+.plan--highlighted .plan__price {
+    color: #444;
+}
+
+.plan--highlighted .plan__title {
+    color: white;
+}
+
+.button {
+    background: #444;
+    color: white;
+    border: 1px solid #444;
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background: white;
+    color: #444;
+}
+
+button:focus {
+    outline: none;
+}
+
+#key-features {
+    background: #ff1b68;
+    margin-top: 5rem;
+    padding: 1rem;
+}
+
+#key-features .section-title {
+    color: white;
+    margin: 2rem;
+}
+
+.key-feature__image {
+    height: 128px;
+    width: 128px;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid #444;
+    margin: 0 auto;
+    padding: 1.2rem;
+}
+
+#key-features .key-feature__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#key-features .key-feature {
+    width: 100%;
+}
+
+@media (min-width: 40rem) {
+    #key-features .key-feature__list {
+        flex-direction: row;
+        justify-content: center;
+    }
+    #key-features .key-feature {
+        width: 30%;
+        max-width: 25rem;
+    }
+}
